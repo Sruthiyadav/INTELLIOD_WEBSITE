@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            /* background: linear-gradient(to bottom, #ffaab5, #ffc788, #fff19f); */
+            background: linear-gradient( #b2c2f7, #c78df4);
+            
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: #333;
+            
+
+        }
+
+        .main-content {
+            min-height: calc(100vh - 56px);
+            display: flex;
+            align-items: center;
+        }
+
+        .contact-form {
+            padding: 30px;
+            border-radius: 8px;
+        }
+
+        .form-control, .btn {
+            border-radius: 30px;
+        }
+
+        .navbar {
+            background-color: transparent !important;
+        }
+
+        .navbar-brand img {
+            height: 4rem;
+            margin-right: 10px;
+            border-radius: 3rem;
+        }
+
+        .company-name {
+            font-size: 2rem; 
+            font-weight: bold; 
+            color: #333;
+        }
+
+        .navbar-nav .nav-item {
+            margin-left: 10px;
+        }
+
+        .navbar-nav .nav-item a.nav-link {
+            font-size: 1.5rem;
+            color: #101111;
+        }
+
+        
+        footer {
+            background-color: #343a40;
+            color: white;
+            padding: 30px 0;
+        }
+
+        .footer-row {
+            margin-top: 20px;
+        }
+
+        .footer-row p {
+            margin-bottom: 5px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            border-radius: 2rem;
+            margin-right: 10px;
+        }
+
+        .head1 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        .email-id {
+            margin-bottom: 5px;
+        }
+        .transparent-input {
+    background-color: transparent;
+    border: 3px solid #0c0c0c;
+    border-bottom: 1px solid #0e0d0d;
+    padding: 10px;
+}
+.transparent-input::placeholder {
+    color: #2e2b2b; 
+}
+.custom-btn {
+    background-color: black; 
+    color: white; 
+    width: 150px; 
+    height: 4rem; 
+}
+.form-control {
+    height: 3rem;
+}
+.transparent-input {
+    background-color: transparent;
+    border: 2px solid #0e0d0d; 
+    opacity:5px;
+    padding: 10px;
+}
+.transparent-input::placeholder {
+    color: #2e2b2b; 
+}
+
+.custom-btn {
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 4rem;
+    border-radius: 30px; 
+    font-size: 1.2rem; 
+
+}
+.logo {
+    width: 4rem; 
+    height: 4rem; 
+    border-radius: 2rem; 
+   
+}
+
+
+</style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+        
+        <a class="navbar-brand" href="#">
+            <img src="Image/Intelliod.jpeg" alt="Logo">
+            <span class="company-name">INTELLIOD</span>
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon" ></span>
+        </button>
+        <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="Home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="About.html">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Contact.html">Contact</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="main-content">
+    <div class="container-fluid">
+        <div class="row justify-content-center">
+            <div class="col-md-4">
+                <div class="left-column">
+                    <section class="contact-info">
+                        <h1 id="h1" class="font-weight-bold" style="font-size: 3rem;">Let's connect.</h1>
+
+                        <div class="info" >
+                            <p  style="font-size: 20px;">Email: <a href="mailto:info@intelliod.com">info@intelliod.com</a></p>
+                            <p style="font-size: 20px;">Address: 123 Main St,<br> Anytown, USA 12345</p>
+                            <div class="sicons">
+                                <a href="https://www.linkedin.com/in/YourLinkedInAccount" target="_blank" class="d-inline-block mr-2">
+                                    <img src="Image/linkedin.PNG" alt="LinkedIn" class="img-fluid rounded-circle" style="width: 4rem;">
+                                </a>
+                                <a href="mailto:info@intelliod.com" target="_blank" class="d-inline-block">
+                                    <img src="Image/mail.PNG" alt="Mail" class="img-fluid rounded-circle" style="width: 4rem;">
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <form class="contact-form">
+                    <div class="form-row">
+                        <div class="form-group col-md-6">
+                           
+                            <input type="text" class="form-control transparent-input" id="firstName" required placeholder="First Name">
+                        </div>
+                        <div class="form-group col-md-6">
+                           
+                            <input type="text" class="form-control transparent-input" id="lastName" required placeholder="Last Name"><br>
+                        </div>
+                        <div class="form-group col-md-12">
+                         
+                            <input type="email" class="form-control transparent-input" id="email" required placeholder="Email"><br>
+                        </div>
+                        <div class="form-group col-md-12">
+                          
+                            <textarea class="form-control transparent-input" id="message transparent-input" rows="4" required placeholder="Message"></textarea><br>
+                        </div>
+                        <div class="form-group col-md-12">
+                            <label style="font-size: 20px;">How did you hear about us?</label>
+                            <div class="form-check">
+                                <input class="form-check-input"type="radio" name="discovery" id="socialMedia" value="socialMedia" style="width: 15px; height: 15px;">
+                                <label class="form-check-label" style="font-size: 20px;" for="socialMedia">
+                                    Social media
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="radio" name="discovery" id="other" value="other" style="width: 15px; height: 15px;">
+                                <label class="form-check-label" style="font-size: 20px;" for="other">
+                                    Other
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="javascript:void(0)" onclick="showMessage()">
+                        <button type="button" class="btn btn-primary btn-lg rounded-pill" style="border: #333;padding-left:3rem;padding-right: 3rem; background-color: #000000;">Send</button>
+                    </a>
+                                   
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<footer class="bg-dark text-light py-5">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-3">
+                <h1 class="head1">
+                    <img class="logo" src="Image/Intelliod.jpeg">
+                    INTELLIOD
+                </h1>
+
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Molestias officiis magnam veritatis quasi vero consectetur nam enim obcaecati pariatur minus dolorum rem dignissimos, vel esse, fuga quidem inventore expedita consequatur.</p>
+            </div>
+            <div class="col-md-3">
+                <h3>Office</h3>
+                <hr class="bg-light">
+                <p>Andhra University</p>
+                <p>Maddilapalem</p>
+                <p>Visakhapatnam, 530003, India</p>
+                <p class="email-id">intelliod@gmail.com</p>
+                <h4>+91 - 9988776655</h4>
+            </div>
+            <div class="col-md-3">
+                <h3>Links</h3>
+                <hr class="bg-light">
+                <ul class="list-unstyled">
+                    <li><a href="Home.html" class="text-light">Home</a></li><br>
+                    <li><a href="About.html" class="text-light">About</a></li><br>
+                    <li><a href="Contact.html" class="text-light">Contact</a></li><br>
+                </ul>
+            </div>
+            <div class="col-md-3">
+                <h3>Follow Us</h3>
+                <hr class="bg-light">
+                <div class="social-icons">
+                    <a href="https://www.linkedin.com/in/YourLinkedInAccount" target="_blank"><img src="Image/Black_LinkedIn).png" alt="LinkedIn"></a>
+                    <a href="mailto:info@intelliod.com" target="_blank"><img src="Image/mail_bgremoved.png" alt="mail"></a>
+                </div>
+            </div>
+        </div>
+        <hr class="bg-light">
+        <p class="text-center">INTELLIOD 2024. All rights are reserved.</p>
+    </div>
+</footer>
+
+
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    function showMessage() {
+        alert("You are successfully registered!");
+    }
+    </script>
+</body>
+</html>
